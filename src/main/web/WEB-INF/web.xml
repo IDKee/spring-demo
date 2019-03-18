@@ -18,6 +18,11 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
+    <!--日志设置${webapp.root}-->
+    <listener>
+        <listener-class>org.springframework.web.util.WebAppRootListener</listener-class>
+    </listener>
+
     <!-- log4j 系统日志-->
     <context-param>
         <param-name>log4jConfiguration</param-name>
