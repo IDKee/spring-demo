@@ -15,6 +15,7 @@ public class TestController {
     @RequestMapping("/hello")
     public String hello(){
         System.out.println("hello");
+        System.getProperty("webApp.root");
         request.setAttribute("name", "panjie");
         return "hello";
     }
